@@ -14,6 +14,7 @@ for line in sys.stdin:
     line = re.sub(r'^\W+|\W+$', '', line)
     words = re.split(r"\W+", line)
 
+    # Comprobamos si la palabra es igual a la buscada
     for word in words:
         if patron == word:
             print(word.lower() + "\t" + str(linea))

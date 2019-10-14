@@ -13,7 +13,7 @@ for line in sys.stdin:
     # Recorremos las palabras hasta que encontramos la peticion y nos quedamos con la url
     for words in words:
         if siguiente:
-            print(words.lower() + "\t1")
+            print(words.lower() + "\t")
             siguiente = False
         if words =="GET" or words == "POST":
             siguiente = True
